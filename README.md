@@ -1,4 +1,4 @@
-# Hanko React-Express Starter
+# Hanko Solid-Express Starter
 
 This template shows how you can integrate Hanko with your Solid App and protect routes using express.js middleware.
 
