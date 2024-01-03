@@ -10,7 +10,6 @@ export const Dashboard = () => {
             <HankoProfile />
             <div>
                 <LogoutBtn />
-                <button onClick={() => navigate("/protected")}>Access the protected page</button>
             </div>
         </>
     )
