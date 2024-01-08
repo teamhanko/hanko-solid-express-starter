@@ -6,14 +6,14 @@ const hankoApi = import.meta.env.VITE_HANKO_API_URL;
 
 export default function HankoAuth() {
   const navigate = useNavigate();
-  const [hanko] = createSignal(new Hanko(hankoApi));
+  const hanko = new Hanko(hankoApi);
 
   const redirectAfterLogin = () => {
     navigate("/dashboard");
   };
 
   onMount(() => {
-    hanko().onAuthFlowCompleted(() => {
+    hanko.onAuthFlowCompleted(() => {
       redirectAfterLogin();
     });
 

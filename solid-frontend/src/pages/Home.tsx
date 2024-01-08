@@ -1,5 +1,9 @@
+import { useNavigate } from "@solidjs/router";
+
 export const Home = () => {
+    const navigate = useNavigate();
+
     return (
-        <h1>Home</h1>
+        <button onClick={() => navigate("/auth")}>Login</button>
     )
 }
